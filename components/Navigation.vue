@@ -8,6 +8,14 @@
           :class="route.path === item.to ? '' : 'text-opacity-60'"
         >
           {{ item.text }}
+          <div
+            class="mt-1.5 rounded-full mx-auto"
+            :class="
+              route.path === item.to
+                ? 'h-1 w-2 bg-slate-900'
+                : 'h-1 w-1 bg-none'
+            "
+          />
         </NuxtLink>
       </p>
     </div>
