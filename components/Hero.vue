@@ -12,7 +12,7 @@
       I'm a software engineer with a passion for building beautiful, performant,
       and accessible applications.
     </p>
-    <div class="flex space-x-2 underline-offset-1">
+    <div class="flex space-x-3 underline-offset-1">
       <NuxtLink
         v-for="social in socials"
         :key="social.name"
@@ -43,7 +43,7 @@ export default {
           url: 'https://www.patreon.com/thehappyprogrammer',
         },
         {
-          name: 'My Site',
+          name: 'The Happy Programmer',
           url: 'https://thehappyprogrammer.com/',
         },
       ],
