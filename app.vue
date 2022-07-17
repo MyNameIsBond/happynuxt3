@@ -12,6 +12,6 @@ import '@/assets/css/tailwind.css';
 html,
 body {
   height: 100%;
-  @apply bg-slate-200;
+  @apply bg-white;
 }
 </style>

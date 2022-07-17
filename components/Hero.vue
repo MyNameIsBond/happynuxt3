@@ -1,5 +1,5 @@
 <template>
-  <div class="py-4">
+  <div class="py-14">
     <nuxt-img
       src="/img/tony.jpg"
       width="80"
@@ -13,20 +13,23 @@
       and accessible applications.
     </p>
     <div class="flex space-x-3 underline-offset-1">
-      <NuxtLink
+      <HappyLink
         v-for="social in socials"
         :key="social.name"
-        class="underline font-medium text-sm"
         :to="social.url"
-        target="_blank"
-        >{{ social.name }}</NuxtLink
-      >
+        :title="social.name"
+        :newtab="true"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import { ArrowNarrowRightIcon } from '@heroicons/vue/outline';
 export default {
+  components: {
+    ArrowNarrowRightIcon,
+  },
   data() {
     return {
       socials: [
