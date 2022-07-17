@@ -4,16 +4,14 @@
       <p v-for="item in items" :key="item.path" class="pr-12">
         <NuxtLink
           :to="item.to"
-          class="text-slate-800"
+          class="text-black"
           :class="route.path === item.to ? '' : 'text-opacity-60'"
         >
           {{ item.text }}
           <div
             class="mt-1.5 rounded-full mx-auto"
             :class="
-              route.path === item.to
-                ? 'h-1 w-2 bg-slate-900'
-                : 'h-1 w-1 bg-none'
+              route.path === item.to ? 'h-1 w-2 bg-black' : 'h-1 w-1 bg-none'
             "
           />
         </NuxtLink>

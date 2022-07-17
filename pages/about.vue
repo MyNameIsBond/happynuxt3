@@ -1,4 +1,6 @@
-<template>about</template>
+<template>
+  <hero />
+</template>
 
 <script>
 export default {};
