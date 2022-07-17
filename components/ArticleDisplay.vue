@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div class="max-w-sm">
       <span class="font-base text-sm text-opacity-40 text-slate-900">{{
         article.date
       }}</span>
