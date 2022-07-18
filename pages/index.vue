@@ -4,7 +4,7 @@
     <article-list title="Projects" :articles="articles" />
     <div class="pt-36" />
     <blog-list />
-    <happy-link to="/blog" title="view all the blogs" />
+    <happy-link to="/blog" title="view all the posts" />
   </div>
 </template>
 

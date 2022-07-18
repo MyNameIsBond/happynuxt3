@@ -14,31 +14,30 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      socials: [
-        {
-          name: 'twitter',
-          url: 'https://twitter.com/happy_prog',
-        },
-        {
-          name: 'github',
-          url: 'https://github.com/MyNameIsBond',
-        },
-        {
-          name: 'patreon',
-          url: 'https://www.patreon.com/thehappyprogrammer',
-        },
-        {
-          name: 'The Happy Programmer',
-          url: 'https://thehappyprogrammer.com/',
-        },
-      ],
-    };
+<script setup>
+const e = await $fetch('/api/subscribe', {
+  method: 'post',
+  body: { test: 'TO MOUNAKIIIIIIII' },
+});
+console.log('LOOOOL:', e);
+const socials = [
+  {
+    name: 'twitter',
+    url: 'https://twitter.com/happy_prog',
   },
-};
+  {
+    name: 'github',
+    url: 'https://github.com/MyNameIsBond',
+  },
+  {
+    name: 'patreon',
+    url: 'https://www.patreon.com/thehappyprogrammer',
+  },
+  {
+    name: 'The Happy Programmer',
+    url: 'https://thehappyprogrammer.com/',
+  },
+];
 </script>
 
 <style></style>

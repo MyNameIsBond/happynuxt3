@@ -5,7 +5,11 @@
         <NuxtLink
           :to="item.to"
           class="text-black"
-          :class="route.path === item.to ? '' : 'text-opacity-60'"
+          :class="
+            route.path === item.to
+              ? ''
+              : 'text-opacity-60 hover:text-opacity-100'
+          "
         >
           {{ item.text }}
           <div
