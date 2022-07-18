@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from 'nuxt';
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/image-edge'],
+  modules: ['@nuxt/image-edge', '@nuxt/content'],
   css: ['~/assets/css/tailwind.css'],
   target: 'static',
   build: {
@@ -11,5 +11,8 @@ export default defineNuxtConfig({
   },
   image: {
     // Options
+  },
+  content: {
+    // https://content.nuxtjs.org/api/configuration
   },
 });
