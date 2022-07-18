@@ -6,7 +6,7 @@
     <p>{{ data.description }}</p>
   </div>
   <main class="prose">
-    <ContentDoc />
+    <ContentRenderer :value="data" />
   </main>
 </template>
 

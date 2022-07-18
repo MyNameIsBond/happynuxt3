@@ -8,9 +8,7 @@
 </template>
 
 <script>
-import { ArrowNarrowRightIcon } from '@heroicons/vue/outline';
 export default {
-  components: { ArrowNarrowRightIcon },
   props: {
     title: String,
     to: String,

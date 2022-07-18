@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/image-edge', '@nuxt/content'],
   css: ['~/assets/css/tailwind.css'],
   target: 'static',
+  ssr: false,
   build: {
     postcss: {
       postcssOptions: require('./postcss.config.js'),
