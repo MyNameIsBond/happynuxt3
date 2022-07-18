@@ -28,12 +28,12 @@ const items = [
     to: '/',
   },
   {
-    text: 'About',
-    to: '/about',
-  },
-  {
     text: 'Blog',
     to: '/blog',
+  },
+  {
+    text: 'About',
+    to: '/about',
   },
 ];
 </script>

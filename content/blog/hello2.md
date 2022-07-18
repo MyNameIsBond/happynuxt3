@@ -1,16 +1,24 @@
 ---
 title: 'Hello World'
 description: 'This is a simple hello world example'
+date: '18-07-2020'
+author: 'Tony'
 ---
 
 # Hello World
 
-This is a simple hello world example.
-
-    []: # Language: markdown
-    []: # Path: content/hello.md
-
 ```javascript
+console.log('Hello World');
+console.log('Hello World');
+```
+
+```js highlight=4,6-8
+import d from './hello.js';
+console.log('Hello World');
+console.log('Hello World');
+console.log('Hello World');
+console.log('Hello World');
+console.log('Hello World');
 console.log('Hello World');
 console.log('Hello World');
 ```
