@@ -23,19 +23,12 @@ export default {
         {
           title: 'Happy Nuxt',
           date: '2020-01-02',
-          body: 'THP is the main website where is contains everything we do.',
+          body: 'Happy nuxt was initially, a course for nuxtjs and how to create a documentation-like website. A blog based on markdown files.',
           image: '/img/nuxt2.png',
           url: 'https://happynuxtjs.com/',
         },
         {
-          title: 'Project 3',
-          date: '2020-01-03',
-          body: 'THP is the main website where is contains everything we do.',
-          image: '/img/next.png',
-          url: '/project/3',
-        },
-        {
-          title: 'Project 3',
+          title: 'Happy Nuxt',
           date: '2020-01-03',
           body: 'THP is the main website where is contains everything we do.',
           image: '/img/next.png',

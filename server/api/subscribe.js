@@ -7,14 +7,13 @@ mailchimp.setConfig({
 
 export default defineEventHandler(async (event) => {
   const body = await useBody(event);
-
   try {
     await mailchimp.lists.addListMember(process.env.AUDIENCE_ID, {
       email_address: body.email,
       status: 'subscribed',
     });
-    return res.status(201).json({ error: '' });
+    return { error: false, message: 'You are now subscribed' };
   } catch (error) {
-    return res.status(500).json({ error: error.message || error.toString() });
+    return { error: true, message: 'Something went wrong, try again.' };
   }
 });

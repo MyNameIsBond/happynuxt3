@@ -15,11 +15,6 @@
 </template>
 
 <script setup>
-const e = await $fetch('/api/subscribe', {
-  method: 'post',
-  body: { test: 'TO MOUNAKIIIIIIII' },
-});
-console.log('LOOOOL:', e);
 const socials = [
   {
     name: 'twitter',
