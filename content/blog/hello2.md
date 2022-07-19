@@ -12,13 +12,8 @@ console.log('Hello World');
 console.log('Hello World');
 ```
 
-```js highlight=4,6-8
+```js
 import d from './hello.js';
-console.log('Hello World');
-console.log('Hello World');
-console.log('Hello World');
-console.log('Hello World');
-console.log('Hello World');
 console.log('Hello World');
 console.log('Hello World');
 ```

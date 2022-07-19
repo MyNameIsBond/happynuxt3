@@ -1,5 +1,9 @@
 <template>
-  <form class="bg-slate-50 my-10 p-6 rounded-2xl">
+  <form
+    class="bg-slate-50 my-10 p-6 rounded-2xl"
+    v-on:submit.prevent="onSubmit()"
+    method="POST"
+  >
     <h5 class="font-medium">Subscribe</h5>
     <p class="text- text-slate-900 text-opacity-60 py-4">
       subscribe to the happy programmer newslater win free courses and get to
@@ -11,7 +15,7 @@
         name="email"
         class="px-3 py-1 rounded-md"
         placeholder="subscribe"
-        id=""
+        v-model="email"
       />
       <button
         type="submit"
@@ -24,7 +28,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      email: '',
+    };
+  },
+  methods: {
+    onSubmit() {
+      console.log(this.email);
+    },
+  },
+};
 </script>
 
 <style></style>

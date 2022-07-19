@@ -17,6 +17,7 @@
     "tailwindcss": "^3.1.6"
   },
   "dependencies": {
-    "@heroicons/vue": "^1.0.6"
+    "@heroicons/vue": "^1.0.6",
+    "@mailchimp/mailchimp_marketing": "^3.0.75"
   }
 }
