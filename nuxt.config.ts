@@ -1,6 +1,11 @@
 import { defineNuxtConfig } from 'nuxt';
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    key: process.env.MAILCHIMP_API_KEY || '',
+    server: process.env.MAILCHIMP_API_SERVER || '',
+    id: process.env.AUDIENCE_ID || '',
+  },
   modules: ['@nuxt/image-edge', '@nuxt/content'],
   css: ['~/assets/css/tailwind.css'],
   target: 'static',

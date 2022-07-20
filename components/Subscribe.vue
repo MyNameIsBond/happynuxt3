@@ -6,7 +6,7 @@
   >
     <h5 class="font-medium">Subscribe</h5>
     <p class="text- text-slate-900 text-opacity-60 py-4">
-      subscribe to the happy programmer newslater win free courses and get to
+      subscribe to the happy programmer newsletter win free courses and get to
       know what is coming next
     </p>
     <div class="flex flex-col">

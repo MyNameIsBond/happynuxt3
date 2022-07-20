@@ -1,14 +1,15 @@
 import mailchimp from '@mailchimp/mailchimp_marketing';
 
 mailchimp.setConfig({
-  apiKey: process.env.MAILCHIMP_API_KEY,
-  server: process.env.MAILCHIMP_API_SERVER,
+  apiKey: useRuntimeConfig().key,
+  server: useRuntimeConfig().server,
 });
 
 export default defineEventHandler(async (event) => {
   const body = await useBody(event);
+
   try {
-    await mailchimp.lists.addListMember(process.env.AUDIENCE_ID, {
+    await mailchimp.lists.addListMember(useRuntimeConfig().id, {
       email_address: body.email,
       status: 'subscribed',
     });
