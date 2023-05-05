@@ -40,3 +40,6 @@ npm run preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+
+<img width="1575" alt="Screenshot 2023-05-05 at 07 46 47" src="https://user-images.githubusercontent.com/22882573/236393019-b1128dd9-f19d-47cb-b4ad-1053922c4344.png">
+
